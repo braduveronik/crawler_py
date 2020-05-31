@@ -1,0 +1,669 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <head>
+  <link href="modpython.css" rel="STYLESHEET" type="text/css"/>
+  <link href="modpython.html" rel="first" title="Mod_python Manual"/>
+  <link href="contents.html" rel="contents" title="Contents"/>
+  <link href="genindex.html" rel="index" title="Index"/>
+  <link href="about.html" rel="last" title="About this document..."/>
+  <link href="about.html" rel="help" title="About this document..."/>
+  <link href="front.html" rel="next"/>
+  <meta content="information" name="aesop"/>
+  <meta content="Mod_python Manual" name="description"/>
+  <meta content="modpython" name="keywords"/>
+  <meta content="document" name="resource-type"/>
+  <meta content="global" name="distribution"/>
+  <title>
+   Mod_python Manual
+  </title>
+ </head>
+ <body>
+  <div class="navigation">
+   <table align="center" cellpadding="0" cellspacing="2" width="100%">
+    <tr>
+     <td>
+      <img alt="" border="0" height="32" src="blank.gif" width="32"/>
+     </td>
+     <td>
+      <img alt="" border="0" height="32" src="blank.gif" width="32"/>
+     </td>
+     <td>
+      <a href="front.html" rel="next" title="Front Matter">
+       <img alt="Next Page" border="0" height="32" src="next.gif" width="32"/>
+      </a>
+     </td>
+     <td align="center" width="100%">
+      Mod_python Manual
+     </td>
+     <td>
+      <a href="contents.html" rel="contents" title="Table of Contents">
+       <img alt="Contents" border="0" height="32" src="contents.gif" width="32"/>
+      </a>
+     </td>
+     <td>
+      <img alt="" border="0" height="32" src="blank.gif" width="32"/>
+     </td>
+     <td>
+      <a href="genindex.html" rel="index" title="Index">
+       <img alt="Index" border="0" height="32" src="index.gif" width="32"/>
+      </a>
+     </td>
+    </tr>
+   </table>
+   <b class="navlabel">
+    Next:
+   </b>
+   <a class="sectref" href="front.html" rel="next">
+    Front Matter
+   </a>
+   <br/>
+   <hr/>
+  </div>
+  <!--End of Navigation Panel-->
+  <p>
+  </p>
+  <div class="titlepage">
+   <center>
+    <h1>
+     Mod_python Manual
+    </h1>
+    <p>
+     <b>
+      <font size="+2">
+       Gregory Trubetskoy
+      </font>
+     </b>
+    </p>
+    <p>
+     E-mail:
+     <span class="email">
+      grisha@apache.org
+     </span>
+    </p>
+    <p>
+     <strong>
+      Release 3.2.8
+     </strong>
+     <br/>
+     <strong>
+      February 19, 2006
+     </strong>
+    </p>
+    <p>
+    </p>
+   </center>
+  </div>
+  <p>
+  </p>
+  <p>
+  </p>
+  <hr/>
+  <!--Table of Child-Links-->
+  <a name="CHILD_LINKS">
+  </a>
+  <ul class="ChildLinks">
+   <li>
+    <a href="front.html">
+     Front Matter
+    </a>
+   </li>
+   <li>
+    <a href="contents.html">
+     Contents
+    </a>
+   </li>
+   <li>
+    <a href="introduction.html">
+     1. Introduction
+    </a>
+    <ul>
+     <li>
+      <a href="intr-performance.html">
+       1.1 Performance
+      </a>
+     </li>
+     <li>
+      <a href="intr-flexibility.html">
+       1.2 Flexibility
+      </a>
+     </li>
+     <li>
+      <a href="intr-history.html">
+       1.3 History
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="installation.html">
+     2. Installation
+    </a>
+    <ul>
+     <li>
+      <a href="inst-prerequisites.html">
+       2.1 Prerequisites
+      </a>
+     </li>
+     <li>
+      <a href="inst-compiling.html">
+       2.2 Compiling
+      </a>
+      <ul>
+       <li>
+        <a href="inst-configure.html">
+         2.2.1 Running ./configure
+        </a>
+       </li>
+       <li>
+        <a href="inst-make.html">
+         2.2.2 Running make
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <a href="inst-installing.html">
+       2.3 Installing
+      </a>
+      <ul>
+       <li>
+        <a href="inst-makeinstall.html">
+         2.3.1 Running make install
+        </a>
+       </li>
+       <li>
+        <a href="inst-apacheconfig.html">
+         2.3.2 Configuring Apache
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <a href="inst-testing.html">
+       2.4 Testing
+      </a>
+     </li>
+     <li>
+      <a href="inst-trouble.html">
+       2.5 Troubleshooting
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="tutorial.html">
+     3. Tutorial
+    </a>
+    <ul>
+     <li>
+      <a href="tut-pub.html">
+       3.1 A Quick Start with the Publisher Handler
+      </a>
+     </li>
+     <li>
+      <a href="tut-overview.html">
+       3.2 Quick Overview of how Apache Handles Requests
+      </a>
+     </li>
+     <li>
+      <a href="tut-what-it-do.html">
+       3.3 So what Exactly does Mod-python do?
+      </a>
+     </li>
+     <li>
+      <a href="tut-more-complicated.html">
+       3.4 Now something More Complicated - Authentication
+      </a>
+     </li>
+     <li>
+      <a href="tut-404-handler.html">
+       3.5 Your Own 404 Handler
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="pythonapi.html">
+     4. Python API
+    </a>
+    <ul>
+     <li>
+      <a href="pyapi-interps.html">
+       4.1 Multiple Interpreters
+      </a>
+     </li>
+     <li>
+      <a href="pyapi-handler.html">
+       4.2 Overview of a Request Handler
+      </a>
+     </li>
+     <li>
+      <a href="pyapi-filter.html">
+       4.3 Overview of a Filter Handler
+      </a>
+     </li>
+     <li>
+      <a href="pyapi-conn.html">
+       4.4 Overview of a Connection Handler
+      </a>
+     </li>
+     <li>
+      <a href="module-apache.html">
+       4.5
+       <tt class="module">
+        apache
+       </tt>
+       - Access to Apache Internals.
+      </a>
+      <ul>
+       <li>
+        <a href="pyapi-apmeth.html">
+         4.5.1 Functions
+        </a>
+       </li>
+       <li>
+        <a href="pyapi-mptable.html">
+         4.5.2 Table Object (mp_table)
+        </a>
+        <a name="l2h-36">
+        </a>
+       </li>
+       <li>
+        <a href="pyapi-mprequest.html">
+         4.5.3 Request Object
+        </a>
+        <a name="l2h-40">
+        </a>
+       </li>
+       <li>
+        <a href="pyapi-mpconn.html">
+         4.5.4 Connection Object (mp_conn)
+        </a>
+        <a name="l2h-124">
+        </a>
+       </li>
+       <li>
+        <a href="pyapi-mpfilt.html">
+         4.5.5 Filter Object (mp_filter)
+        </a>
+        <a name="l2h-145">
+        </a>
+       </li>
+       <li>
+        <a href="pyapi-mpserver.html">
+         4.5.6 Server Object (mp_server)
+        </a>
+        <a name="l2h-158">
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <a href="pyapi-util.html">
+       4.6
+       <tt class="module">
+        util
+       </tt>
+       - Miscellaneous Utilities
+      </a>
+      <ul>
+       <li>
+        <a href="pyapi-util-fstor.html">
+         4.6.1 FieldStorage class
+        </a>
+       </li>
+       <li>
+        <a href="pyapi-util-fstor-fld.html">
+         4.6.2 Field class
+        </a>
+       </li>
+       <li>
+        <a href="pyapi-util-funcs.html">
+         4.6.3 Other functions
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <a href="pyapi-cookie.html">
+       4.7
+       <tt class="module">
+        Cookie
+       </tt>
+       - HTTP State Management
+      </a>
+      <ul>
+       <li>
+        <a href="pyapi-cookie-classes.html">
+         4.7.1 Classes
+        </a>
+       </li>
+       <li>
+        <a href="pyapi-cookie-func.html">
+         4.7.2 Functions
+        </a>
+       </li>
+       <li>
+        <a href="pyapi-cookie-example.html">
+         4.7.3 Examples
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <a href="pyapi-sess.html">
+       4.8
+       <tt class="module">
+        Session
+       </tt>
+       - Session Management
+      </a>
+      <ul>
+       <li>
+        <a href="pyapi-sess-classes.html">
+         4.8.1 Classes
+        </a>
+       </li>
+       <li>
+        <a href="pyapi-sess-example.html">
+         4.8.2 Examples
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <a href="pyapi-psp.html">
+       4.9
+       <tt class="module">
+        psp
+       </tt>
+       - Python Server Pages
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="directives.html">
+     5. Apache Configuration Directives
+    </a>
+    <ul>
+     <li>
+      <a href="dir-handlers.html">
+       5.1 Request Handlers
+      </a>
+      <ul>
+       <li>
+        <a href="dir-handlers-syn.html">
+         5.1.1 Python*Handler Directive Syntax
+        </a>
+       </li>
+       <li>
+        <a href="dir-handlers-prrh.html">
+         5.1.2 PythonPostReadRequestHandler
+        </a>
+       </li>
+       <li>
+        <a href="dir-handlers-th.html">
+         5.1.3 PythonTransHandler
+        </a>
+       </li>
+       <li>
+        <a href="dir-handlers-hph.html">
+         5.1.4 PythonHeaderParserHandler
+        </a>
+       </li>
+       <li>
+        <a href="dir-handlers-pih.html">
+         5.1.5 PythonInitHandler
+        </a>
+       </li>
+       <li>
+        <a href="dir-handlers-ach.html">
+         5.1.6 PythonAccessHandler
+        </a>
+       </li>
+       <li>
+        <a href="dir-handlers-auh.html">
+         5.1.7 PythonAuthenHandler
+        </a>
+       </li>
+       <li>
+        <a href="dir-handlers-auzh.html">
+         5.1.8 PythonAuthzHandler
+        </a>
+       </li>
+       <li>
+        <a href="dir-handlers-tph.html">
+         5.1.9 PythonTypeHandler
+        </a>
+       </li>
+       <li>
+        <a href="dir-handlers-fuh.html">
+         5.1.10 PythonFixupHandler
+        </a>
+       </li>
+       <li>
+        <a href="dir-handlers-ph.html">
+         5.1.11 PythonHandler
+        </a>
+       </li>
+       <li>
+        <a href="dir-handlers-plh.html">
+         5.1.12 PythonLogHandler
+        </a>
+       </li>
+       <li>
+        <a href="dir-handlers-pch.html">
+         5.1.13 PythonCleanupHandler
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <a href="dir-filter.html">
+       5.2 Filters
+      </a>
+      <ul>
+       <li>
+        <a href="dir-filter-if.html">
+         5.2.1 PythonInputFilter
+        </a>
+       </li>
+       <li>
+        <a href="dir-filter-of.html">
+         5.2.2 PythonOutputFilter
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <a href="dir-conn.html">
+       5.3 Connection Handler
+      </a>
+      <ul>
+       <li>
+        <a href="dir-conn-ch.html">
+         5.3.1 PythonConnectionHandler
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <a href="dir-other.html">
+       5.4 Other Directives
+      </a>
+      <ul>
+       <li>
+        <a href="dir-other-epd.html">
+         5.4.1 PythonEnablePdb
+        </a>
+       </li>
+       <li>
+        <a href="dir-other-pd.html">
+         5.4.2 PythonDebug
+        </a>
+       </li>
+       <li>
+        <a href="dir-other-pimp.html">
+         5.4.3 PythonImport
+        </a>
+       </li>
+       <li>
+        <a href="dir-other-ipd.html">
+         5.4.4 PythonInterpPerDirectory
+        </a>
+       </li>
+       <li>
+        <a href="dir-other-ipdv.html">
+         5.4.5 PythonInterpPerDirective
+        </a>
+       </li>
+       <li>
+        <a href="dir-other-pi.html">
+         5.4.6 PythonInterpreter
+        </a>
+       </li>
+       <li>
+        <a href="dir-other-phm.html">
+         5.4.7 PythonHandlerModule
+        </a>
+       </li>
+       <li>
+        <a href="dir-other-par.html">
+         5.4.8 PythonAutoReload
+        </a>
+       </li>
+       <li>
+        <a href="dir-other-pomz.html">
+         5.4.9 PythonOptimize
+        </a>
+       </li>
+       <li>
+        <a href="dir-other-po.html">
+         5.4.10 PythonOption
+        </a>
+       </li>
+       <li>
+        <a href="dir-other-pp.html">
+         5.4.11 PythonPath
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="handlers.html">
+     6. Standard Handlers
+    </a>
+    <ul>
+     <li>
+      <a href="hand-pub.html">
+       6.1 Publisher Handler
+      </a>
+      <ul>
+       <li>
+        <a href="hand-pub-intro.html">
+         6.1.1 Introduction
+        </a>
+       </li>
+       <li>
+        <a href="hand-pub-alg.html">
+         6.1.2 The Publishing Algorithm
+        </a>
+       </li>
+       <li>
+        <a href="node94.html">
+         6.1.3 Form Data
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <a href="hand-psp.html">
+       6.2 PSP Handler
+      </a>
+     </li>
+     <li>
+      <a href="hand-cgi.html">
+       6.3 CGI Handler
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="node97.html">
+     A. Changes from Version (3.2.7)
+    </a>
+   </li>
+   <li>
+    <a href="node98.html">
+     B. Changes from Version (3.1.4)
+    </a>
+   </li>
+   <li>
+    <a href="app-changes.html">
+     C. Changes from Previous Major Version (2.x)
+    </a>
+   </li>
+   <li>
+    <a href="genindex.html">
+     Index
+    </a>
+   </li>
+   <li>
+    <a href="about.html">
+     About this document ...
+    </a>
+   </li>
+  </ul>
+  <!--End of Table of Child-Links-->
+  <div class="navigation">
+   <p>
+   </p>
+   <hr/>
+   <table align="center" cellpadding="0" cellspacing="2" width="100%">
+    <tr>
+     <td>
+      <img alt="" border="0" height="32" src="blank.gif" width="32"/>
+     </td>
+     <td>
+      <img alt="" border="0" height="32" src="blank.gif" width="32"/>
+     </td>
+     <td>
+      <a href="front.html" rel="next" title="Front Matter">
+       <img alt="Next Page" border="0" height="32" src="next.gif" width="32"/>
+      </a>
+     </td>
+     <td align="center" width="100%">
+      Mod_python Manual
+     </td>
+     <td>
+      <a href="contents.html" rel="contents" title="Table of Contents">
+       <img alt="Contents" border="0" height="32" src="contents.gif" width="32"/>
+      </a>
+     </td>
+     <td>
+      <img alt="" border="0" height="32" src="blank.gif" width="32"/>
+     </td>
+     <td>
+      <a href="genindex.html" rel="index" title="Index">
+       <img alt="Index" border="0" height="32" src="index.gif" width="32"/>
+      </a>
+     </td>
+    </tr>
+   </table>
+   <b class="navlabel">
+    Next:
+   </b>
+   <a class="sectref" href="front.html" rel="next">
+    Front Matter
+   </a>
+   <hr/>
+   <span class="release-info">
+    Release 3.2.8, documentation updated on February 19, 2006.
+   </span>
+  </div>
+  <!--End of Navigation Panel-->
+ </body>
+</html>
