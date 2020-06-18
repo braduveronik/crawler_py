@@ -1,0 +1,17 @@
+//startExceptions
+
+
+Veronica
+Ioana
+Bianca
+Alina
+It
+Comp
+Isabela
+Theo
+Melissa
+Ana
+Elen
+John
+
+//endExceptions

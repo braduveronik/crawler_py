@@ -1,0 +1,51 @@
+
+	Title&Metadata: ('PCW', None, None, None)
+
+	Text: 
+Programare Web
+
+
+PW Laborator
+
+        
+		Laborator 1  Recapitulare. Definitii. Notiuni de baza..
+	    
+        
+		Laborator 2  XML.XPath.XSLT.
+	    
+        
+		Laborator 3  XML(2).
+	    
+        
+		Laborator 4  Extensii Chrome.
+	    
+        
+		Laborator 5  RSS.
+	    
+        
+		Laborator 6  Mashups.
+	    
+        
+		Laboratoarele 7_8  Angular JS.
+	    
+        
+		Laborator 9  Validari XML.
+	    
+        
+		Laboratoarele 10_11  Node JS.
+	    
+        
+		Laborator 12  WebMobile.
+	    
+
+
+
+
+Pentru alte detalii puteti trimite e-mail pe adresa tiberiusdumitriu@yahoo.com
+
+
+
+
+	Links: ['lab1.html', 'lab2.html', 'lab3.html', 'lab4.html', 'lab5.html', 'lab6.html', 'lab7_8.html', 'lab9.html', 'lab10.html', 'lab12.html']
+
+	Full_links: ['http://tiberius.byethost13.com/lab1.html', 'http://tiberius.byethost13.com/lab2.html', 'http://tiberius.byethost13.com/lab3.html', 'http://tiberius.byethost13.com/lab4.html', 'http://tiberius.byethost13.com/lab5.html', 'http://tiberius.byethost13.com/lab6.html', 'http://tiberius.byethost13.com/lab7_8.html', 'http://tiberius.byethost13.com/lab9.html', 'http://tiberius.byethost13.com/lab10.html', 'http://tiberius.byethost13.com/lab12.html']
